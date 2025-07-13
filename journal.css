@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/background.png');
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+}
+
+
+button#open-btn{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 390px;
+    height:500px;
+    background-image:url('./images/cover.png');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+
+#closed-journal{
+    width: 390px;
+    height: 500px;   
+}
+
+.hidden{
+    display: none !important;
+}
+
+#open-journal{
+    display: flex;
+    align-items: center;
+}
+
+#left-page, #right-page{
+    
+    width:350px;
+    height: 500px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+#left-page{
+    background-image: url(./images/leftpage.png);
+    background-size: cover;
+}
+#right-page{
+    background-image: url(./images/rightpage.png);
+    background-size: cover;
+}
+
+svg{
+    color: beige;
+
+}
+
+.btns{
+    background-color: transparent;
+    margin: 8px ;
+
+}
+
+#left-page, #right-page{
+    position: relative;
+}
+
+#left-page-number, #right-page-number{
+    position: absolute;
+    top:470px;
+    left:330px;
+    color: #6F4E37;
+}
+
+#left-content, #right-content{
+   
+    padding: 18px;
+    height:460px;
+
+    
+  overflow: auto;
+  
+  box-sizing: border-box;
+  font-family: 'Segoe Script', 'Lucida Handwriting', 'Comic Sans MS', cursive;
+
+  
+}
